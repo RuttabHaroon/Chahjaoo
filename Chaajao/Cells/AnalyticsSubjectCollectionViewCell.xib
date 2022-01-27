@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gordita Regular.otf">
+            <string>Gordita-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AnalyticsSubjectCollectionViewCell" customModule="Chaajao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="82.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="82.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTg-MQ-hC3" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                        <rect key="frame" x="5" y="0.0" width="60" height="82.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NY7-NQ-DAQ" userLabel="IconView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                <rect key="frame" x="7.5" y="7.5" width="45" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bq-r9-mGK">
+                                        <rect key="frame" x="11.5" y="11.5" width="22.5" height="22.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2bq-r9-mGK" secondAttribute="height" multiplier="1:1" id="28O-BV-aL0"/>
+                                        </constraints>
+                                        <color key="tintColor" name="yellowGradientEnd"/>
+                                        <state key="normal" image="Mock.Test"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2bq-r9-mGK" firstAttribute="centerX" secondItem="NY7-NQ-DAQ" secondAttribute="centerX" id="9Aa-dX-pV1"/>
+                                    <constraint firstAttribute="width" secondItem="NY7-NQ-DAQ" secondAttribute="height" id="EDd-yI-zcQ"/>
+                                    <constraint firstItem="2bq-r9-mGK" firstAttribute="centerY" secondItem="NY7-NQ-DAQ" secondAttribute="centerY" id="mhg-kq-ORe"/>
+                                    <constraint firstItem="2bq-r9-mGK" firstAttribute="width" secondItem="NY7-NQ-DAQ" secondAttribute="width" multiplier="0.5" id="qI2-1R-oZr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVD-cm-OEU" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                <rect key="frame" x="3" y="62.5" width="54" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="11"/>
+                                <color key="textColor" name="darkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqF-n1-qZ0" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="82.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="Ahb-Bs-cjT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="boxBorder"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NY7-NQ-DAQ" secondAttribute="trailing" constant="7.5" id="1CO-PT-izh"/>
+                            <constraint firstAttribute="bottom" secondItem="cqF-n1-qZ0" secondAttribute="bottom" id="1Fc-PO-eOF"/>
+                            <constraint firstAttribute="trailing" secondItem="fVD-cm-OEU" secondAttribute="trailing" constant="3" id="6Fr-DT-hmk"/>
+                            <constraint firstItem="cqF-n1-qZ0" firstAttribute="top" secondItem="mTg-MQ-hC3" secondAttribute="top" id="Bej-mu-miZ"/>
+                            <constraint firstAttribute="trailing" secondItem="cqF-n1-qZ0" secondAttribute="trailing" id="OkO-qq-eGT"/>
+                            <constraint firstItem="fVD-cm-OEU" firstAttribute="top" secondItem="NY7-NQ-DAQ" secondAttribute="bottom" constant="10" id="QzL-vI-6CO"/>
+                            <constraint firstItem="NY7-NQ-DAQ" firstAttribute="top" secondItem="mTg-MQ-hC3" secondAttribute="top" constant="7.5" id="XvT-C7-SuY"/>
+                            <constraint firstItem="fVD-cm-OEU" firstAttribute="leading" secondItem="mTg-MQ-hC3" secondAttribute="leading" constant="3" id="gpR-DU-2N9"/>
+                            <constraint firstItem="NY7-NQ-DAQ" firstAttribute="leading" secondItem="mTg-MQ-hC3" secondAttribute="leading" constant="7.5" id="lQN-iD-q3w"/>
+                            <constraint firstItem="cqF-n1-qZ0" firstAttribute="leading" secondItem="mTg-MQ-hC3" secondAttribute="leading" id="w9z-Er-Wp4"/>
+                            <constraint firstAttribute="bottom" secondItem="fVD-cm-OEU" secondAttribute="bottom" constant="7.5" id="ydG-BU-82j"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mTg-MQ-hC3" secondAttribute="trailing" constant="5" id="0AL-vo-Ki0"/>
+                <constraint firstItem="mTg-MQ-hC3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="6ls-I4-hM8"/>
+                <constraint firstAttribute="bottom" secondItem="mTg-MQ-hC3" secondAttribute="bottom" id="8ia-I4-Xnh"/>
+                <constraint firstItem="mTg-MQ-hC3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Wor-cj-ZDS"/>
+            </constraints>
+            <connections>
+                <outlet property="baseView" destination="mTg-MQ-hC3" id="k3i-aJ-sii"/>
+                <outlet property="icon" destination="2bq-r9-mGK" id="jAa-6K-p6N"/>
+                <outlet property="titleLabel" destination="fVD-cm-OEU" id="CJV-uZ-OrQ"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Mock.Test" width="500" height="500"/>
+        <namedColor name="boxBorder">
+            <color red="0.85100001096725464" green="0.88599997758865356" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGray">
+            <color red="0.14499999582767487" green="0.15299999713897705" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellowGradientEnd">
+            <color red="0.92500001192092896" green="0.6940000057220459" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

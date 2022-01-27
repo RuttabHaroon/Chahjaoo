@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141.409" height="138.689" viewBox="0 0 141.409 138.689">
+  <defs>
+    <filter id="Path_266" x="0" y="0" width="141.409" height="138.689" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#25272b" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(27 24)">
+    <g transform="matrix(1, 0, 0, 1, -27, -24)" filter="url(#Path_266)">
+      <path id="Path_266-2" data-name="Path 266" d="M81.409,52.12a24.144,24.144,0,0,0-.327-3.957l.007.015A75.1,75.1,0,0,0,60.139,8.3l.007.012A26.891,26.891,0,0,0,21.275,8.3,75.11,75.11,0,0,0,.325,48.177,24.1,24.1,0,0,0,0,52.12C0,63.069,7.369,72.37,17.621,75.736c0,0,16.261,5.96,42.38.945h0C72.176,74.569,81.409,64.376,81.409,52.12Z" transform="translate(108.41 102.69) rotate(-180)" fill="#fff"/>
+    </g>
+    <g id="Group_839" data-name="Group 839" transform="translate(25.193 18.885)">
+      <g id="Group_837" data-name="Group 837" transform="translate(13.885)">
+        <path id="Path_267" data-name="Path 267" d="M623.583,428.462l1.91,1.909a1.329,1.329,0,0,1,0,1.881l-1.88,1.879a1.329,1.329,0,0,1-1.88,0l-1.912-1.909.021-.02" transform="translate(-605.729 -414.377)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_268" data-name="Path 268" d="M627.7,432.574l-3.74,3.738-.021.021-11.594-11.588.021-.021,3.74-3.738Z" transform="translate(-610.025 -418.667)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_269" data-name="Path 269" d="M616.952,421.831l-3.74,3.738-.021.021-.44-.44-1.88-5.638,5.641,1.879Z" transform="translate(-610.871 -419.512)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Group_838" data-name="Group 838" transform="translate(0 0)">
+        <path id="Path_270" data-name="Path 270" d="M634.283,451.2H603.995a.709.709,0,0,1-.709-.708V420.223a.71.71,0,0,1,1.211-.5l30.287,30.272A.709.709,0,0,1,634.283,451.2ZM609,445.488" transform="translate(-601.345 -419.512)" fill="#e6e6e6"/>
+        <path id="Path_271" data-name="Path 271" d="M630.4,453.915h5.031a.664.664,0,0,0,.471-1.133L603.188,420.09a.665.665,0,0,0-1.135.471v32.69a.663.663,0,0,0,.664.664h23.795" transform="translate(-602.053 -419.293)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_272" data-name="Path 272" d="M606,441.145V430.808a.709.709,0,0,1,1.211-.5l10.343,10.338a.709.709,0,0,1-.5,1.21H606.707A.71.71,0,0,1,606,441.145Zm0,.71" transform="translate(-599.786 -413.439)" fill="#a81417"/>
+        <line id="Line_257" data-name="Line 257" x1="2.107" y2="1.974" transform="translate(8.446 10.334)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_258" data-name="Line 258" x1="2.107" y2="1.974" transform="translate(11.891 13.833)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_259" data-name="Line 259" x1="2.107" y2="1.974" transform="translate(15.363 17.187)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_260" data-name="Line 260" x1="2.107" y2="1.974" transform="translate(18.825 20.699)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_261" data-name="Line 261" x1="2.107" y2="1.974" transform="translate(22.434 24.302)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

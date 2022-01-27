@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gordita Regular.otf">
+            <string>Gordita-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TestCell" customModule="Chaajao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tob-9W-clm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <color key="backgroundColor" name="inactiveMenuItemTint"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="RdE-qZ-5YU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQX-SK-1Pu" userLabel="Content">
+                        <rect key="frame" x="0.0" y="0.5" width="320" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Er6-qg-dqp">
+                                <rect key="frame" x="0.0" y="18" width="72.5" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topical Test - 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF7-bs-FfK" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="10"/>
+                                        <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                        <color key="textColor" name="darkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAG-s4-Y71" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="16" width="72.5" height="8"/>
+                                        <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="8"/>
+                                        <color key="textColor" name="labelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eye-Lc-Zsf" userLabel="Retry" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                <rect key="frame" x="200" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eye-Lc-Zsf" secondAttribute="height" id="ba9-B4-Avt"/>
+                                </constraints>
+                                <color key="tintColor" name="midRed"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <state key="normal" image="Refresh"/>
+                                <connections>
+                                    <action selector="redoTapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FS1-nB-OXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXM-9Z-htF" userLabel="Start" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                <rect key="frame" x="260" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PXM-9Z-htF" secondAttribute="height" id="i7M-AN-Oof"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                <state key="normal" image="PadLock.Filled"/>
+                                <connections>
+                                    <action selector="tapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3IR-6A-HLe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Er6-qg-dqp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HQX-SK-1Pu" secondAttribute="top" id="4qg-aF-AI3"/>
+                            <constraint firstAttribute="trailing" secondItem="PXM-9Z-htF" secondAttribute="trailing" id="5Ae-F6-mNh"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Er6-qg-dqp" secondAttribute="bottom" id="5XW-PW-42W"/>
+                            <constraint firstItem="PXM-9Z-htF" firstAttribute="top" secondItem="HQX-SK-1Pu" secondAttribute="top" id="EOJ-JJ-W1E"/>
+                            <constraint firstItem="eye-Lc-Zsf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Er6-qg-dqp" secondAttribute="trailing" id="ICc-jd-o4Z"/>
+                            <constraint firstAttribute="bottom" secondItem="eye-Lc-Zsf" secondAttribute="bottom" id="Ng6-cW-Tfu"/>
+                            <constraint firstAttribute="bottom" secondItem="PXM-9Z-htF" secondAttribute="bottom" id="TBO-tb-gD4"/>
+                            <constraint firstItem="Er6-qg-dqp" firstAttribute="leading" secondItem="HQX-SK-1Pu" secondAttribute="leading" id="Vf4-Py-36r"/>
+                            <constraint firstItem="eye-Lc-Zsf" firstAttribute="top" secondItem="HQX-SK-1Pu" secondAttribute="top" id="ohK-9d-gmd"/>
+                            <constraint firstItem="PXM-9Z-htF" firstAttribute="leading" secondItem="eye-Lc-Zsf" secondAttribute="trailing" id="rER-C1-Z6K"/>
+                            <constraint firstAttribute="height" constant="60" id="sjn-8g-jQB"/>
+                            <constraint firstItem="Er6-qg-dqp" firstAttribute="centerY" secondItem="HQX-SK-1Pu" secondAttribute="centerY" id="yv3-nl-w2e"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSg-cw-BkE">
+                        <rect key="frame" x="0.0" y="60.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" name="inactiveMenuItemTint"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="B4T-QK-GaV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HQX-SK-1Pu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2b8-aA-VwF"/>
+                    <constraint firstItem="tob-9W-clm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y9P-9f-d9P"/>
+                    <constraint firstAttribute="trailing" secondItem="HQX-SK-1Pu" secondAttribute="trailing" id="arZ-0K-S7W"/>
+                    <constraint firstAttribute="trailing" secondItem="PSg-cw-BkE" secondAttribute="trailing" id="gt5-0L-cTE"/>
+                    <constraint firstItem="HQX-SK-1Pu" firstAttribute="top" secondItem="tob-9W-clm" secondAttribute="bottom" id="mdl-0c-vXX"/>
+                    <constraint firstAttribute="bottom" secondItem="PSg-cw-BkE" secondAttribute="bottom" id="oaw-ke-cgD"/>
+                    <constraint firstAttribute="trailing" secondItem="tob-9W-clm" secondAttribute="trailing" id="uXi-ji-GTX"/>
+                    <constraint firstItem="tob-9W-clm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vks-LO-FNF"/>
+                    <constraint firstItem="PSg-cw-BkE" firstAttribute="top" secondItem="HQX-SK-1Pu" secondAttribute="bottom" id="wxc-JM-Sdx"/>
+                    <constraint firstItem="PSg-cw-BkE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="x27-0I-Ytl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bottomSeparator" destination="PSg-cw-BkE" id="Afl-zL-Pzj"/>
+                <outlet property="button" destination="PXM-9Z-htF" id="QpG-7T-Qzw"/>
+                <outlet property="redoTest" destination="eye-Lc-Zsf" id="aiu-c5-bw7"/>
+                <outlet property="subTitle" destination="BAG-s4-Y71" id="lcR-1O-Hw6"/>
+                <outlet property="title" destination="ZF7-bs-FfK" id="Vqm-Nd-Ddc"/>
+                <outlet property="topSeparator" destination="tob-9W-clm" id="IZQ-Ff-btW"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="131"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PadLock.Filled" width="500" height="500"/>
+        <image name="Refresh" width="438.79998779296875" height="458.20001220703125"/>
+        <namedColor name="darkGray">
+            <color red="0.14499999582767487" green="0.15299999713897705" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="inactiveMenuItemTint">
+            <color red="0.72200000286102295" green="0.75700002908706665" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.44299998879432678" green="0.48600000143051147" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="midRed">
+            <color red="0.6589999794960022" green="0.078000001609325409" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

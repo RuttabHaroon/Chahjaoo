@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gordita Bold.otf">
+            <string>Gordita-Bold</string>
+        </array>
+        <array key="Gordita Regular.otf">
+            <string>Gordita-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirmationActionSheetView" customModule="Chaajao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJd-YC-cRN" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="656"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="g5x-nq-VdI">
+                            <rect key="frame" x="20" y="217.5" width="374" height="221"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit Test?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijk-jn-xfe" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
+                                    <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="18"/>
+                                    <color key="textColor" name="darkGray"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lY-iX-CL1" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="48" width="374" height="28"/>
+                                    <string key="text">Hey, Ahmed, are you sure you want to
+end this test?</string>
+                                    <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="14"/>
+                                    <color key="textColor" name="darkGray"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSF-sW-gq4" userLabel="Footer">
+                                    <rect key="frame" x="0.0" y="106" width="374" height="115"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wd-CZ-ZoW" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="5" width="374" height="45"/>
+                                            <color key="backgroundColor" name="redGradientEnd"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="confirmationView"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="pOL-Fj-y6o"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="13"/>
+                                            <state key="normal" title="SUBMIT">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRedGradient" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="primaryButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="Krm-AX-eGV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQH-5h-Uuc" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="65" width="374" height="45"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="confirmationView"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="GZ1-fj-lgP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="13"/>
+                                            <state key="normal" title="Cancel">
+                                                <color key="titleColor" name="darkGray"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="secondaryButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="o3N-rg-aPT"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="confirmationView"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="XQH-5h-Uuc" secondAttribute="trailing" id="AKv-Zp-8cN"/>
+                                        <constraint firstItem="8wd-CZ-ZoW" firstAttribute="leading" secondItem="OSF-sW-gq4" secondAttribute="leading" id="RvA-rP-by3"/>
+                                        <constraint firstItem="XQH-5h-Uuc" firstAttribute="leading" secondItem="OSF-sW-gq4" secondAttribute="leading" id="Yya-Vy-36K"/>
+                                        <constraint firstItem="8wd-CZ-ZoW" firstAttribute="top" secondItem="OSF-sW-gq4" secondAttribute="top" constant="5" id="dYc-wT-K2c"/>
+                                        <constraint firstAttribute="bottom" secondItem="XQH-5h-Uuc" secondAttribute="bottom" constant="5" id="flm-NW-OTT"/>
+                                        <constraint firstItem="XQH-5h-Uuc" firstAttribute="top" secondItem="8wd-CZ-ZoW" secondAttribute="bottom" constant="15" id="g8Z-Or-F2P"/>
+                                        <constraint firstAttribute="trailing" secondItem="8wd-CZ-ZoW" secondAttribute="trailing" id="wZj-R6-I5j"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="g5x-nq-VdI" secondAttribute="trailing" constant="20" id="ITF-Nl-N7T"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g5x-nq-VdI" secondAttribute="bottom" id="LSL-FG-E4g"/>
+                        <constraint firstItem="g5x-nq-VdI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UJd-YC-cRN" secondAttribute="top" id="Yuj-HM-nmu"/>
+                        <constraint firstItem="g5x-nq-VdI" firstAttribute="centerY" secondItem="UJd-YC-cRN" secondAttribute="centerY" id="enu-J9-g6p"/>
+                        <constraint firstItem="g5x-nq-VdI" firstAttribute="leading" secondItem="UJd-YC-cRN" secondAttribute="leading" constant="20" id="q0Q-7Y-ye6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="36"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="1" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="UJd-YC-cRN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1fn-zj-eeN"/>
+                <constraint firstItem="UJd-YC-cRN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JcX-ZT-8jM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UJd-YC-cRN" secondAttribute="trailing" id="Vhy-15-NCh"/>
+                <constraint firstAttribute="bottom" secondItem="UJd-YC-cRN" secondAttribute="bottom" id="r4M-NL-WPP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="5lY-iX-CL1" id="KgI-me-sFZ"/>
+                <outlet property="headerLabel" destination="ijk-jn-xfe" id="vQa-H2-zWk"/>
+                <outlet property="primaryButton" destination="8wd-CZ-ZoW" id="LDd-Tx-eAC"/>
+                <outlet property="secondaryButton" destination="XQH-5h-Uuc" id="g6C-IG-JZY"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="darkGray">
+            <color red="0.14499999582767487" green="0.15299999713897705" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="redGradientEnd">
+            <color red="0.94499999284744263" green="0.12200000137090683" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+PODS:
+  - AdvancedPageControl (0.9.0)
+  - Alamofire (4.9.0)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - DLRadioButton (1.4.12)
+  - iosMath (0.9.4)
+  - IQKeyboardManagerSwift (6.5.0)
+  - Kingfisher (7.0.0)
+  - MKRingProgressView (2.3.0)
+  - ObjectMapper (4.2.0)
+  - PryntTrimmerView (4.0.2)
+  - SecureDefaults (1.0.5)
+  - SteviaLayout (4.7.3)
+  - SVLatexView (1.1.4)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.3.0)
+  - YPImagePicker (5.0.0):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
+
+DEPENDENCIES:
+  - AdvancedPageControl
+  - Alamofire (= 4.9.0)
+  - Charts
+  - DLRadioButton (~> 1.4)
+  - iosMath
+  - IQKeyboardManagerSwift (= 6.5.0)
+  - Kingfisher (= 7.0.0)
+  - MKRingProgressView
+  - ObjectMapper
+  - SecureDefaults (= 1.0.5)
+  - SVLatexView
+  - SVProgressHUD
+  - SwiftyJSON (~> 4.0)
+  - YPImagePicker
+
+SPEC REPOS:
+  trunk:
+    - AdvancedPageControl
+    - Alamofire
+    - Charts
+    - DLRadioButton
+    - iosMath
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MKRingProgressView
+    - ObjectMapper
+    - PryntTrimmerView
+    - SecureDefaults
+    - SteviaLayout
+    - SVLatexView
+    - SVProgressHUD
+    - SwiftyJSON
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  AdvancedPageControl: 39e3b32b00b2d324c534f8e17cc6c5be9abe84b7
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  iosMath: f7a6cbadf9d836d2149c2a84c435b1effc244cba
+  IQKeyboardManagerSwift: 6cd19976c6e871907c4ed9127c2d3affdd4defc2
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
+  MKRingProgressView: f534209b9a1edc0beb2ea613e6b953ea2195b565
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SecureDefaults: 1d84f828e6c525b9197e2a164f8c465b4af86cd9
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SVLatexView: 3380404d33688a6e3040d270d873424053db4b37
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
+
+PODFILE CHECKSUM: 02836cb9d31e2da4f1228be0cb5cf4b2617db266
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gordita Bold.otf">
+            <string>Gordita-Bold</string>
+        </array>
+        <array key="Gordita Regular.otf">
+            <string>Gordita-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Performance AnalyticsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PerformanceAnalyticsVCID" id="Y6W-OH-hqX" customClass="PerformanceAnalyticsVC" customModule="Chaajao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJg-uu-43R" userLabel="Header">
+                                <rect key="frame" x="20" y="44" width="374" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learning Analysis" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlT-j0-0N3" userLabel="Heading" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="299" height="14"/>
+                                        <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="14"/>
+                                        <color key="textColor" name="darkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d7L-LH-Ekh">
+                                        <rect key="frame" x="334" y="12" width="30" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twf-PM-Nnc" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="twf-PM-Nnc" secondAttribute="height" id="8xk-Lu-CTl"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                                <state key="normal" image="Notification.Badge"/>
+                                            </button>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIZ-oz-F4h" userLabel="ProfilePicView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jww-gN-Tfz" userLabel="profilePicture" customClass="BaseUIImageView" customModule="Chaajao" customModuleProvider="target">
+                                                        <rect key="frame" x="2" y="2" width="26" height="26"/>
+                                                        <color key="backgroundColor" name="darkGray"/>
+                                                        <color key="tintColor" name="brightRed"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yIZ-oz-F4h" secondAttribute="height" id="6Gk-6B-x2t"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Jww-gN-Tfz" secondAttribute="bottom" constant="2" id="QsW-mQ-Ldg"/>
+                                                    <constraint firstItem="Jww-gN-Tfz" firstAttribute="top" secondItem="yIZ-oz-F4h" secondAttribute="top" constant="2" id="adp-YW-JUT"/>
+                                                    <constraint firstItem="Jww-gN-Tfz" firstAttribute="leading" secondItem="yIZ-oz-F4h" secondAttribute="leading" constant="2" id="kwg-oL-4DL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Jww-gN-Tfz" secondAttribute="trailing" constant="2" id="wvf-nR-WYS"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="shadow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="eVd-6Y-Oth"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TlT-j0-0N3" firstAttribute="centerY" secondItem="aJg-uu-43R" secondAttribute="centerY" id="9Sn-Yg-Lvr"/>
+                                    <constraint firstItem="TlT-j0-0N3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aJg-uu-43R" secondAttribute="top" id="BQJ-vJ-L4E"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TlT-j0-0N3" secondAttribute="bottom" id="CTp-VH-s5J"/>
+                                    <constraint firstAttribute="height" constant="54" id="Ftj-UO-f0Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="d7L-LH-Ekh" secondAttribute="trailing" constant="10" id="K28-zP-CgK"/>
+                                    <constraint firstItem="TlT-j0-0N3" firstAttribute="leading" secondItem="aJg-uu-43R" secondAttribute="leading" constant="20" id="Pyq-Sx-T8D"/>
+                                    <constraint firstItem="d7L-LH-Ekh" firstAttribute="top" secondItem="aJg-uu-43R" secondAttribute="top" constant="12" id="cyO-0O-aZW"/>
+                                    <constraint firstItem="d7L-LH-Ekh" firstAttribute="leading" secondItem="TlT-j0-0N3" secondAttribute="trailing" constant="15" id="nUs-uQ-BwG"/>
+                                    <constraint firstAttribute="bottom" secondItem="d7L-LH-Ekh" secondAttribute="bottom" constant="12" id="u1Y-sM-E6n"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R87-O2-Fbm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gtg-oZ-exv" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="664"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="adm-po-HJy">
+                                                <rect key="frame" x="15" y="15" width="379" height="90"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="HCz-me-5of"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="udh-pb-o5w">
+                                                    <size key="itemSize" width="70" height="90"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="WrW-ok-N92"/>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="iVC-7U-2sd"/>
+                                                </connections>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Subjects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoV-BO-VcF">
+                                                <rect key="frame" x="20" y="135" width="110.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="18"/>
+                                                <color key="textColor" name="darkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-2g-aDo">
+                                                <rect key="frame" x="20" y="168" width="99" height="12"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Overall Statistics">
+                                                        <attributes>
+                                                            <color key="NSColor" name="darkGray"/>
+                                                            <font key="NSFont" size="12" name="Gordita-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8u-6B-c2i" userLabel="LineView">
+                                                <rect key="frame" x="20" y="200" width="374" height="2"/>
+                                                <color key="backgroundColor" name="separatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="9Iq-dO-65B"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iti-FE-TPW" userLabel="AllSubjectsRingChartBaseView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="222" width="374" height="220"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtD-pX-qG4">
+                                                        <rect key="frame" x="24.5" y="0.0" width="325" height="220"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab4-7e-nbp" userLabel="RingChartView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IV2-mY-NeJ">
+                                                                        <rect key="frame" x="92.5" y="95" width="35.5" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9US-ds-Y3a" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEm-VN-133" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="35.5" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Ab4-7e-nbp" secondAttribute="height" id="DrF-2b-iTd"/>
+                                                                    <constraint firstItem="IV2-mY-NeJ" firstAttribute="centerY" secondItem="Ab4-7e-nbp" secondAttribute="centerY" id="DzU-T1-zMW"/>
+                                                                    <constraint firstItem="IV2-mY-NeJ" firstAttribute="centerX" secondItem="Ab4-7e-nbp" secondAttribute="centerX" id="gLD-I3-NcR"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GMB-ik-law">
+                                                                <rect key="frame" x="260" y="20" width="65" height="180"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v6Y-5c-HW0">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nu-Rk-s25" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="greenProgress"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physics" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FL-5x-Tbb" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="65" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s1u-aW-h0K">
+                                                                        <rect key="frame" x="0.0" y="50" width="65" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2e-YT-RdV" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="pinkProgress"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1D-Gu-Xev" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="65" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LnT-1A-ynT">
+                                                                        <rect key="frame" x="0.0" y="100" width="65" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-Kd-STV" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="blueGradientStart"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemistry" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaS-G3-zYF" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="65" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oQh-3s-5Oh">
+                                                                        <rect key="frame" x="0.0" y="150" width="65" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feh-rf-4YG" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="mustardProgress"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mathematics" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3f-1K-F33" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="65" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="GMB-ik-law" firstAttribute="leading" secondItem="Ab4-7e-nbp" secondAttribute="trailing" constant="40" id="55f-9Q-EPE"/>
+                                                            <constraint firstItem="Ab4-7e-nbp" firstAttribute="top" secondItem="wtD-pX-qG4" secondAttribute="top" id="SWu-iK-IbM"/>
+                                                            <constraint firstItem="GMB-ik-law" firstAttribute="centerY" secondItem="wtD-pX-qG4" secondAttribute="centerY" id="ToJ-EE-yLe"/>
+                                                            <constraint firstItem="GMB-ik-law" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wtD-pX-qG4" secondAttribute="top" id="eZv-5h-abC"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GMB-ik-law" secondAttribute="trailing" id="evc-G7-LKb"/>
+                                                            <constraint firstItem="Ab4-7e-nbp" firstAttribute="centerY" secondItem="wtD-pX-qG4" secondAttribute="centerY" id="s22-kO-vpy"/>
+                                                            <constraint firstItem="Ab4-7e-nbp" firstAttribute="leading" secondItem="wtD-pX-qG4" secondAttribute="leading" id="sZl-5d-c4s"/>
+                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GMB-ik-law" secondAttribute="bottom" id="urQ-KJ-Mqv"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ab4-7e-nbp" secondAttribute="bottom" id="y3q-Oi-Q5e"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="wtD-pX-qG4" firstAttribute="centerX" secondItem="Iti-FE-TPW" secondAttribute="centerX" id="59e-AC-OyH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wtD-pX-qG4" secondAttribute="bottom" id="6z8-vt-dZG"/>
+                                                    <constraint firstItem="wtD-pX-qG4" firstAttribute="top" secondItem="Iti-FE-TPW" secondAttribute="top" id="MSF-fL-3uB"/>
+                                                    <constraint firstAttribute="height" constant="220" id="P8X-fY-f7o"/>
+                                                </constraints>
+                                            </view>
+                                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="III-7I-LHl" userLabel="SingleSubjectsRingChartBaseView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="222" width="374" height="220"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyD-R5-fCe">
+                                                        <rect key="frame" x="24.5" y="0.0" width="325" height="220"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sd0-Lu-Uy4" userLabel="RingChartView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-gU-TcJ">
+                                                                        <rect key="frame" x="78" y="90" width="64.5" height="40"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0M-jG-CGN" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMf-VV-zVu" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="64.5" height="20"/>
+                                                                                <string key="text">Average
+Performance</string>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="W8h-gU-TcJ" firstAttribute="centerY" secondItem="sd0-Lu-Uy4" secondAttribute="centerY" id="3eC-ZY-gzr"/>
+                                                                    <constraint firstAttribute="width" secondItem="sd0-Lu-Uy4" secondAttribute="height" id="9nm-kY-E8p"/>
+                                                                    <constraint firstItem="W8h-gU-TcJ" firstAttribute="centerX" secondItem="sd0-Lu-Uy4" secondAttribute="centerX" id="oib-w8-jZX"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-gC-AAS">
+                                                                <rect key="frame" x="260" y="45" width="65" height="130"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-jP-dti">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIJ-dP-Gx3" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="greenProgress"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVm-1E-Pfm" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="65" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tvs-sm-Mec">
+                                                                        <rect key="frame" x="0.0" y="50" width="65" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoX-NR-w7G" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="mustardProgress"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjF-ce-HnX" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="65" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OFE-bC-BcK">
+                                                                        <rect key="frame" x="0.0" y="100" width="65" height="30"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-px-Was" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="15"/>
+                                                                                <color key="textColor" name="pinkProgress"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hard" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F5-JG-SdD" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="65" height="10"/>
+                                                                                <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                                                                <color key="textColor" name="darkGray"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="CuA-gC-AAS" secondAttribute="trailing" id="44z-du-CRr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="sd0-Lu-Uy4" secondAttribute="bottom" id="AAX-vl-Lrd"/>
+                                                            <constraint firstItem="sd0-Lu-Uy4" firstAttribute="leading" secondItem="pyD-R5-fCe" secondAttribute="leading" id="Lh1-xT-eyA"/>
+                                                            <constraint firstItem="CuA-gC-AAS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pyD-R5-fCe" secondAttribute="top" id="N9b-r6-t1X"/>
+                                                            <constraint firstItem="sd0-Lu-Uy4" firstAttribute="top" secondItem="pyD-R5-fCe" secondAttribute="top" id="g8p-lg-kPX"/>
+                                                            <constraint firstItem="CuA-gC-AAS" firstAttribute="leading" secondItem="sd0-Lu-Uy4" secondAttribute="trailing" constant="40" id="hxC-cp-oGn"/>
+                                                            <constraint firstItem="sd0-Lu-Uy4" firstAttribute="centerY" secondItem="pyD-R5-fCe" secondAttribute="centerY" id="lK3-Qn-HPg"/>
+                                                            <constraint firstItem="CuA-gC-AAS" firstAttribute="centerY" secondItem="pyD-R5-fCe" secondAttribute="centerY" id="n9w-rH-Aqj"/>
+                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CuA-gC-AAS" secondAttribute="bottom" id="tVx-Md-KQb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="220" id="0sY-QR-s8O"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pyD-R5-fCe" secondAttribute="bottom" id="Bvy-LV-LDY"/>
+                                                    <constraint firstItem="pyD-R5-fCe" firstAttribute="top" secondItem="III-7I-LHl" secondAttribute="top" id="W0S-DK-Rud"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jow-wh-Qdw" userLabel="LineView">
+                                                <rect key="frame" x="20" y="462" width="374" height="2"/>
+                                                <color key="backgroundColor" name="separatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="z9v-m0-Hl4"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kwT-em-Q3r" userLabel="Horizontal Stack">
+                                                <rect key="frame" x="30" y="494" width="354" height="140"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7x-Yv-yhJ" userLabel="RegisterForLive">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="140"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyD-IN-Vdn" userLabel="LiveClasses" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="29" y="0.0" width="60" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="YUq-Nz-P8O"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                                                                <state key="normal" image="CheckFilled.BlackCircle"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                        <real key="value" value="0.20000000000000001"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                        <size key="value" width="1" height="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slr-Ef-rez">
+                                                                <rect key="frame" x="34" y="72" width="50.5" height="23"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment>
+                                                                        <string key="content">Questions
+Correct</string>
+                                                                        <attributes>
+                                                                            <color key="NSColor" name="darkGray"/>
+                                                                            <font key="NSFont" size="10" name="Gordita-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="105/210" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-am-ShY" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="28" y="107" width="62" height="21"/>
+                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="14"/>
+                                                                <color key="textColor" name="darkGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="home"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ZyD-IN-Vdn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h7x-Yv-yhJ" secondAttribute="leading" id="FnV-lu-XTw"/>
+                                                            <constraint firstItem="slr-Ef-rez" firstAttribute="top" secondItem="ZyD-IN-Vdn" secondAttribute="bottom" constant="12" id="Ka8-7J-MTU"/>
+                                                            <constraint firstAttribute="bottom" secondItem="zhv-am-ShY" secondAttribute="bottom" constant="12" id="Mqg-pz-8Rc"/>
+                                                            <constraint firstItem="ZyD-IN-Vdn" firstAttribute="top" secondItem="h7x-Yv-yhJ" secondAttribute="top" id="OrU-lx-Efm"/>
+                                                            <constraint firstItem="slr-Ef-rez" firstAttribute="centerX" secondItem="h7x-Yv-yhJ" secondAttribute="centerX" id="VSH-jC-T6R"/>
+                                                            <constraint firstItem="ZyD-IN-Vdn" firstAttribute="width" secondItem="ZyD-IN-Vdn" secondAttribute="height" id="W4c-Ka-DRs"/>
+                                                            <constraint firstItem="zhv-am-ShY" firstAttribute="centerX" secondItem="h7x-Yv-yhJ" secondAttribute="centerX" id="fMH-V7-LGf"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZyD-IN-Vdn" secondAttribute="trailing" id="m9I-9l-rnO"/>
+                                                            <constraint firstItem="zhv-am-ShY" firstAttribute="top" secondItem="slr-Ef-rez" secondAttribute="bottom" constant="12" id="mLG-QN-qJu"/>
+                                                            <constraint firstItem="ZyD-IN-Vdn" firstAttribute="centerX" secondItem="zhv-am-ShY" secondAttribute="centerX" id="tUo-JX-RRo"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpX-VJ-gSP" userLabel="SolveFreeQs">
+                                                        <rect key="frame" x="118" y="0.0" width="118" height="140"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ys-MJ-uPF" userLabel="SolveFreeQs" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="29" y="0.0" width="60" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="CAz-8U-5nn"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="16" minY="16" maxX="16" maxY="16"/>
+                                                                <state key="normal" image="Test.Attempt"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                        <real key="value" value="0.20000000000000001"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                        <size key="value" width="1" height="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vve-Cn-hNs">
+                                                                <rect key="frame" x="32" y="72" width="54.5" height="24"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment>
+                                                                        <string key="content">Tests
+Attempted</string>
+                                                                        <attributes>
+                                                                            <color key="NSColor" name="darkGray"/>
+                                                                            <font key="NSFont" size="10" name="Gordita-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11/200" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvg-Sg-mWn" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="32.5" y="108" width="53" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="14"/>
+                                                                <color key="textColor" name="darkGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="home"/>
+                                                        <constraints>
+                                                            <constraint firstItem="mvg-Sg-mWn" firstAttribute="centerX" secondItem="vpX-VJ-gSP" secondAttribute="centerX" id="5uT-zn-Dgq"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Ys-MJ-uPF" secondAttribute="trailing" id="T4b-LE-cEB"/>
+                                                            <constraint firstItem="6Ys-MJ-uPF" firstAttribute="width" secondItem="6Ys-MJ-uPF" secondAttribute="height" id="TBQ-fV-7yD"/>
+                                                            <constraint firstItem="6Ys-MJ-uPF" firstAttribute="centerX" secondItem="mvg-Sg-mWn" secondAttribute="centerX" id="ToW-qm-afu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mvg-Sg-mWn" secondAttribute="bottom" constant="12" id="aCk-i3-w8y"/>
+                                                            <constraint firstItem="Vve-Cn-hNs" firstAttribute="top" secondItem="6Ys-MJ-uPF" secondAttribute="bottom" constant="12" id="fDX-JP-zRd"/>
+                                                            <constraint firstItem="6Ys-MJ-uPF" firstAttribute="top" secondItem="vpX-VJ-gSP" secondAttribute="top" id="iZs-t1-R5o"/>
+                                                            <constraint firstItem="Vve-Cn-hNs" firstAttribute="centerX" secondItem="vpX-VJ-gSP" secondAttribute="centerX" id="jHp-Lh-Q5W"/>
+                                                            <constraint firstItem="mvg-Sg-mWn" firstAttribute="top" secondItem="Vve-Cn-hNs" secondAttribute="bottom" constant="12" id="s2t-X8-1J3"/>
+                                                            <constraint firstItem="6Ys-MJ-uPF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vpX-VJ-gSP" secondAttribute="leading" id="wbh-CX-FnV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4P-2o-5y6" userLabel="AskYourDoubt">
+                                                        <rect key="frame" x="236" y="0.0" width="118" height="140"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbt-Fp-SJp" userLabel="AskYourDoubtButton" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="29" y="0.0" width="60" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="Qov-9u-2uq"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                                                                <state key="normal" image="Clock.WithHands"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                        <real key="value" value="0.20000000000000001"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                        <size key="value" width="1" height="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-fw-JSm">
+                                                                <rect key="frame" x="31.5" y="72" width="55" height="23"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment>
+                                                                        <string key="content">Avg. Time/
+Question</string>
+                                                                        <attributes>
+                                                                            <color key="NSColor" name="darkGray"/>
+                                                                            <font key="NSFont" size="10" name="Gordita-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1m40s" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-lf-mtx" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                                                <rect key="frame" x="38" y="107" width="42" height="21"/>
+                                                                <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="12"/>
+                                                                <color key="textColor" name="darkGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="home"/>
+                                                        <constraints>
+                                                            <constraint firstItem="cbt-Fp-SJp" firstAttribute="top" secondItem="a4P-2o-5y6" secondAttribute="top" id="8bf-FD-bck"/>
+                                                            <constraint firstItem="cbt-Fp-SJp" firstAttribute="width" secondItem="cbt-Fp-SJp" secondAttribute="height" id="9nR-IX-PiV"/>
+                                                            <constraint firstItem="Yet-fw-JSm" firstAttribute="top" secondItem="cbt-Fp-SJp" secondAttribute="bottom" constant="12" id="NDd-lD-eX4"/>
+                                                            <constraint firstItem="Yet-fw-JSm" firstAttribute="centerX" secondItem="a4P-2o-5y6" secondAttribute="centerX" id="NT7-vh-rHA"/>
+                                                            <constraint firstAttribute="bottom" secondItem="fh4-lf-mtx" secondAttribute="bottom" constant="12" id="SuB-NV-k60"/>
+                                                            <constraint firstItem="fh4-lf-mtx" firstAttribute="top" secondItem="Yet-fw-JSm" secondAttribute="bottom" constant="12" id="bul-Vp-RIh"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cbt-Fp-SJp" secondAttribute="trailing" id="nfi-di-ifO"/>
+                                                            <constraint firstItem="cbt-Fp-SJp" firstAttribute="centerX" secondItem="fh4-lf-mtx" secondAttribute="centerX" id="oFS-2d-gs5"/>
+                                                            <constraint firstItem="fh4-lf-mtx" firstAttribute="centerX" secondItem="a4P-2o-5y6" secondAttribute="centerX" id="rKp-A8-OYT"/>
+                                                            <constraint firstItem="cbt-Fp-SJp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a4P-2o-5y6" secondAttribute="leading" id="u02-PU-zUB"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="pyD-R5-fCe" firstAttribute="leading" secondItem="wtD-pX-qG4" secondAttribute="leading" id="0SR-Xc-aBB"/>
+                                            <constraint firstAttribute="trailing" secondItem="K8u-6B-c2i" secondAttribute="trailing" constant="20" id="4al-eO-M8g"/>
+                                            <constraint firstItem="kwT-em-Q3r" firstAttribute="top" secondItem="Jow-wh-Qdw" secondAttribute="bottom" constant="30" id="5VG-fm-Od9"/>
+                                            <constraint firstItem="adm-po-HJy" firstAttribute="top" secondItem="Gtg-oZ-exv" secondAttribute="top" constant="15" id="7Gd-Qd-OtI"/>
+                                            <constraint firstItem="III-7I-LHl" firstAttribute="bottom" secondItem="Iti-FE-TPW" secondAttribute="bottom" id="8e5-6p-6CD"/>
+                                            <constraint firstItem="pyD-R5-fCe" firstAttribute="trailing" secondItem="wtD-pX-qG4" secondAttribute="trailing" id="Bz6-rD-vPi"/>
+                                            <constraint firstItem="adm-po-HJy" firstAttribute="leading" secondItem="Gtg-oZ-exv" secondAttribute="leading" constant="15" id="EQZ-Wc-dWQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Iti-FE-TPW" secondAttribute="trailing" constant="20" id="GTy-df-d1L"/>
+                                            <constraint firstItem="Iti-FE-TPW" firstAttribute="top" secondItem="K8u-6B-c2i" secondAttribute="bottom" constant="20" id="KDR-p8-QgR"/>
+                                            <constraint firstItem="Jow-wh-Qdw" firstAttribute="top" secondItem="Iti-FE-TPW" secondAttribute="bottom" constant="20" id="Ljd-D2-OnO"/>
+                                            <constraint firstItem="QOe-2g-aDo" firstAttribute="top" secondItem="HoV-BO-VcF" secondAttribute="bottom" constant="15" id="QPN-bk-ZKk"/>
+                                            <constraint firstAttribute="trailing" secondItem="kwT-em-Q3r" secondAttribute="trailing" constant="30" id="Riv-zp-wDO"/>
+                                            <constraint firstAttribute="trailing" secondItem="adm-po-HJy" secondAttribute="trailing" constant="20" id="Tge-YG-feJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jow-wh-Qdw" secondAttribute="trailing" constant="20" id="Veq-kj-xNo"/>
+                                            <constraint firstItem="K8u-6B-c2i" firstAttribute="leading" secondItem="Gtg-oZ-exv" secondAttribute="leading" constant="20" id="WAT-g3-dfy"/>
+                                            <constraint firstAttribute="bottom" secondItem="kwT-em-Q3r" secondAttribute="bottom" constant="30" id="YRz-md-Q5d"/>
+                                            <constraint firstItem="Iti-FE-TPW" firstAttribute="leading" secondItem="Gtg-oZ-exv" secondAttribute="leading" constant="20" id="diz-F9-cKG"/>
+                                            <constraint firstItem="kwT-em-Q3r" firstAttribute="leading" secondItem="Gtg-oZ-exv" secondAttribute="leading" constant="30" id="ds4-Ow-iMa"/>
+                                            <constraint firstItem="HoV-BO-VcF" firstAttribute="top" secondItem="adm-po-HJy" secondAttribute="bottom" constant="30" id="f4D-51-Z7K"/>
+                                            <constraint firstItem="QOe-2g-aDo" firstAttribute="leading" secondItem="Gtg-oZ-exv" secondAttribute="leading" constant="20" id="fz3-8j-qwN"/>
+                                            <constraint firstItem="HoV-BO-VcF" firstAttribute="leading" secondItem="Gtg-oZ-exv" secondAttribute="leading" constant="20" id="gGZ-WK-Ym4"/>
+                                            <constraint firstItem="III-7I-LHl" firstAttribute="trailing" secondItem="Iti-FE-TPW" secondAttribute="trailing" id="n6f-Ci-Gf3"/>
+                                            <constraint firstItem="III-7I-LHl" firstAttribute="top" secondItem="Iti-FE-TPW" secondAttribute="top" id="rJR-wm-jTv"/>
+                                            <constraint firstItem="III-7I-LHl" firstAttribute="leading" secondItem="Iti-FE-TPW" secondAttribute="leading" id="siq-OJ-qSC"/>
+                                            <constraint firstItem="K8u-6B-c2i" firstAttribute="top" secondItem="QOe-2g-aDo" secondAttribute="bottom" constant="20" id="zKw-aA-bbV"/>
+                                            <constraint firstItem="Jow-wh-Qdw" firstAttribute="leading" secondItem="Gtg-oZ-exv" secondAttribute="leading" constant="20" id="zfm-8w-cCZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gtg-oZ-exv" firstAttribute="bottom" secondItem="1Mw-Hy-SUk" secondAttribute="bottom" id="4BJ-Vr-oUz"/>
+                                    <constraint firstItem="Gtg-oZ-exv" firstAttribute="trailing" secondItem="1Mw-Hy-SUk" secondAttribute="trailing" id="RFf-33-xVk"/>
+                                    <constraint firstItem="Gtg-oZ-exv" firstAttribute="top" secondItem="1Mw-Hy-SUk" secondAttribute="top" id="Sac-iM-HZk"/>
+                                    <constraint firstItem="Gtg-oZ-exv" firstAttribute="leading" secondItem="1Mw-Hy-SUk" secondAttribute="leading" id="YSI-nH-P3m"/>
+                                    <constraint firstItem="Gtg-oZ-exv" firstAttribute="width" secondItem="sLm-Tk-GpR" secondAttribute="width" id="fF9-SM-pVw"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1Mw-Hy-SUk"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="sLm-Tk-GpR"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="R87-O2-Fbm" secondAttribute="bottom" id="Fiv-7L-yKK"/>
+                            <constraint firstItem="R87-O2-Fbm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="J4h-Va-Fdd"/>
+                            <constraint firstItem="aJg-uu-43R" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="MhI-fF-7R3"/>
+                            <constraint firstItem="aJg-uu-43R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="TQl-Nv-Tss"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aJg-uu-43R" secondAttribute="trailing" constant="20" id="W48-XU-8Pm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="R87-O2-Fbm" secondAttribute="trailing" id="mM7-fv-ow8"/>
+                            <constraint firstItem="R87-O2-Fbm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ptj-0E-IOK"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="allSubjectRingChartBaseView" destination="Iti-FE-TPW" id="Qa6-fF-PyI"/>
+                        <outlet property="allSubjectRingChartParentView" destination="Ab4-7e-nbp" id="0jo-lz-nLj"/>
+                        <outlet property="collectionView" destination="adm-po-HJy" id="nbq-BV-Qaz"/>
+                        <outlet property="specificSubjectRingChartBaseView" destination="III-7I-LHl" id="OH4-8V-aK5"/>
+                        <outlet property="specificSubjectRingChartParentView" destination="sd0-Lu-Uy4" id="FDC-Dz-6FG"/>
+                        <outlet property="titleLabel" destination="HoV-BO-VcF" id="x14-HN-fPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.550724637681171" y="65.625"/>
+        </scene>
+        <!--Analytics TabVC-->
+        <scene sceneID="bTd-Bb-fB3">
+            <objects>
+                <viewController storyboardIdentifier="AnalyticsTabVCID" id="z73-Mt-vQV" customClass="AnalyticsTabVC" customModule="Chaajao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uib-pI-uW9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4z-Ad-mlS" userLabel="Header">
+                                <rect key="frame" x="0.0" y="59" width="414" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learning Analysis" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5d-gz-xqk" userLabel="Heading" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="8" width="126" height="14"/>
+                                        <fontDescription key="fontDescription" name="Gordita-Bold" family="Gordita" pointSize="14"/>
+                                        <color key="textColor" name="darkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ghr-P8-ZHa">
+                                        <rect key="frame" x="314" y="0.0" width="80" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVc-K6-qTw" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="bVc-K6-qTw" secondAttribute="height" id="vW6-7A-mHW"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                                <state key="normal" image="Notification.Badge"/>
+                                                <connections>
+                                                    <action selector="openNotifications" destination="z73-Mt-vQV" eventType="touchUpInside" id="Vfd-Ka-VgI"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJM-ze-h5G" userLabel="ProfilePicView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="30" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sAQ-2K-jK2" userLabel="profilePicture" customClass="BaseUIImageView" customModule="Chaajao" customModuleProvider="target">
+                                                        <rect key="frame" x="2" y="2" width="26" height="26"/>
+                                                        <color key="backgroundColor" name="darkGray"/>
+                                                        <color key="tintColor" name="brightRed"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="sAQ-2K-jK2" secondAttribute="trailing" constant="2" id="8aP-4M-fYg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sAQ-2K-jK2" secondAttribute="bottom" constant="2" id="Apj-eD-bfw"/>
+                                                    <constraint firstAttribute="width" secondItem="FJM-ze-h5G" secondAttribute="height" id="Lg0-qf-0aF"/>
+                                                    <constraint firstItem="sAQ-2K-jK2" firstAttribute="leading" secondItem="FJM-ze-h5G" secondAttribute="leading" constant="2" id="kGJ-vP-2gp"/>
+                                                    <constraint firstItem="sAQ-2K-jK2" firstAttribute="top" secondItem="FJM-ze-h5G" secondAttribute="top" constant="2" id="ztF-U8-eA3"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="shadow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="QtO-Rv-4MR" appends="YES" id="s4P-7L-pxX"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="lPm-2V-txT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ghr-P8-ZHa" firstAttribute="top" secondItem="K4z-Ad-mlS" secondAttribute="top" id="0Tf-Pp-pew"/>
+                                    <constraint firstItem="R5d-gz-xqk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="K4z-Ad-mlS" secondAttribute="top" id="6J7-Gj-EEd"/>
+                                    <constraint firstItem="Ghr-P8-ZHa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="R5d-gz-xqk" secondAttribute="trailing" constant="15" id="PDy-Rk-wkk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ghr-P8-ZHa" secondAttribute="trailing" constant="20" id="a9y-rn-ziP"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="R5d-gz-xqk" secondAttribute="bottom" id="i83-jI-Ok0"/>
+                                    <constraint firstItem="R5d-gz-xqk" firstAttribute="leading" secondItem="K4z-Ad-mlS" secondAttribute="leading" constant="20" id="qxS-nB-Kq0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ghr-P8-ZHa" secondAttribute="bottom" id="sKi-d9-sqt"/>
+                                    <constraint firstItem="R5d-gz-xqk" firstAttribute="centerY" secondItem="K4z-Ad-mlS" secondAttribute="centerY" id="w0w-SM-IPz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-Qh-Ul6">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iZ7-Pa-PAK"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iZ7-Pa-PAK" firstAttribute="trailing" secondItem="jaH-Qh-Ul6" secondAttribute="trailing" id="79g-nj-vIP"/>
+                            <constraint firstItem="iZ7-Pa-PAK" firstAttribute="bottom" secondItem="jaH-Qh-Ul6" secondAttribute="bottom" id="Cvl-L1-xse"/>
+                            <constraint firstAttribute="trailing" secondItem="K4z-Ad-mlS" secondAttribute="trailing" id="GUA-8t-oTH"/>
+                            <constraint firstItem="K4z-Ad-mlS" firstAttribute="top" secondItem="iZ7-Pa-PAK" secondAttribute="top" constant="15" id="HB5-uC-uaO"/>
+                            <constraint firstItem="jaH-Qh-Ul6" firstAttribute="leading" secondItem="iZ7-Pa-PAK" secondAttribute="leading" id="hre-WS-hWh"/>
+                            <constraint firstItem="jaH-Qh-Ul6" firstAttribute="top" secondItem="K4z-Ad-mlS" secondAttribute="bottom" id="i0V-sv-xcQ"/>
+                            <constraint firstItem="K4z-Ad-mlS" firstAttribute="leading" secondItem="uib-pI-uW9" secondAttribute="leading" id="iSj-hW-PuV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controllerView" destination="jaH-Qh-Ul6" id="A9C-WD-XZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kY-Sr-ele" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QtO-Rv-4MR">
+                    <connections>
+                        <action selector="navToProfileVc" destination="z73-Mt-vQV" id="KWt-bs-h8I"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-552" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CheckFilled.BlackCircle" width="500" height="500"/>
+        <image name="Clock.WithHands" width="500" height="500"/>
+        <image name="Notification.Badge" width="500" height="500"/>
+        <image name="Test.Attempt" width="500" height="500"/>
+        <namedColor name="blueGradientStart">
+            <color red="0.32899999618530273" green="0.60799998044967651" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="brightRed">
+            <color red="0.94499999284744263" green="0.12200000137090683" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGray">
+            <color red="0.14499999582767487" green="0.15299999713897705" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="greenProgress">
+            <color red="0.50199997425079346" green="0.83499997854232788" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mustardProgress">
+            <color red="0.93699997663497925" green="0.7369999885559082" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pinkProgress">
+            <color red="0.875" green="0.41600000858306885" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separatorColor">
+            <color red="0.9100000262260437" green="0.92500001192092896" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shadow">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

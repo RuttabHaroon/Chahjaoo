@@ -1,0 +1,39 @@
+//
+//  ActionSheet.swift
+
+import UIKit
+
+class ActSheet: NSObject {
+
+  //  private var _actionCompletion:((row :Int)->Void)!
+    
+    
+     class func showSheet(completion:@escaping (_ row :Int)->(),buttonlist : [String],title : String?)->UIAlertController{
+   
+     //   self._actionCompletion = completion
+        
+        
+        let actionSheet = UIAlertController(title:title, message:nil, preferredStyle:
+            UIAlertController.Style.actionSheet)
+        
+        for i in 0...buttonlist.count-1 {
+            
+            let libButton = UIAlertAction(title:  buttonlist[i], style:.default) { (libSelected) ->  Void in
+                
+                completion (i)
+            }
+            
+            actionSheet.addAction(libButton)
+        }
+    
+        let cancel = UIAlertAction(title:"Cancel", style:.cancel) { (libSelected) ->  Void in
+    
+        }
+        
+        actionSheet.addAction(cancel)
+        return actionSheet
+       
+        
+        
+    }
+}

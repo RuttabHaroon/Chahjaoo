@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gordita Regular.otf">
+            <string>Gordita-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="Chaajao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anq-hM-4cF" userLabel="BackgroundView" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                        <rect key="frame" x="15" y="0.0" width="290" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXn-L5-UQC" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                                <rect key="frame" x="10" y="15" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQl-sR-0Rq" userLabel="Icon" customClass="BaseUIButton" customModule="Chaajao" customModuleProvider="target">
+                                <rect key="frame" x="10" y="15" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ZuM-NS-3pK"/>
+                                </constraints>
+                                <color key="tintColor" name="midRed"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="Email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zkq-lU-yFv">
+                                <rect key="frame" x="65" y="20.5" width="190" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dummy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5i-Iy-67V" userLabel="Title" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="12"/>
+                                        <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                        <color key="textColor" name="darkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYe-Rh-pUt" userLabel="Description" customClass="BaseUILabel" customModule="Chaajao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17" width="190" height="12"/>
+                                        <fontDescription key="fontDescription" name="Gordita-Regular" family="Gordita" pointSize="10"/>
+                                        <color key="textColor" name="darkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RQl-sR-0Rq" firstAttribute="top" secondItem="anq-hM-4cF" secondAttribute="top" constant="15" id="5Vt-8c-CzG"/>
+                            <constraint firstItem="zkq-lU-yFv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="anq-hM-4cF" secondAttribute="top" id="5tU-xJ-aUb"/>
+                            <constraint firstItem="GXn-L5-UQC" firstAttribute="leading" secondItem="RQl-sR-0Rq" secondAttribute="leading" id="9IC-nd-J5A"/>
+                            <constraint firstAttribute="bottom" secondItem="RQl-sR-0Rq" secondAttribute="bottom" constant="15" id="C11-sD-Nnh"/>
+                            <constraint firstItem="RQl-sR-0Rq" firstAttribute="leading" secondItem="anq-hM-4cF" secondAttribute="leading" constant="10" id="Cfx-Jf-QjZ"/>
+                            <constraint firstItem="GXn-L5-UQC" firstAttribute="trailing" secondItem="RQl-sR-0Rq" secondAttribute="trailing" id="GbK-zO-dLM"/>
+                            <constraint firstItem="RQl-sR-0Rq" firstAttribute="width" secondItem="RQl-sR-0Rq" secondAttribute="height" id="NnO-IM-AeK"/>
+                            <constraint firstItem="GXn-L5-UQC" firstAttribute="bottom" secondItem="RQl-sR-0Rq" secondAttribute="bottom" id="RuM-cC-TgE"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zkq-lU-yFv" secondAttribute="bottom" id="apP-wV-zkT"/>
+                            <constraint firstItem="GXn-L5-UQC" firstAttribute="top" secondItem="RQl-sR-0Rq" secondAttribute="top" id="bwb-Ds-R2Y"/>
+                            <constraint firstItem="zkq-lU-yFv" firstAttribute="centerY" secondItem="anq-hM-4cF" secondAttribute="centerY" id="c8F-RF-9Zq"/>
+                            <constraint firstItem="zkq-lU-yFv" firstAttribute="leading" secondItem="RQl-sR-0Rq" secondAttribute="trailing" constant="15" id="mwE-sL-bX0"/>
+                            <constraint firstAttribute="trailing" secondItem="zkq-lU-yFv" secondAttribute="trailing" constant="35" id="u3n-bk-HuK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQM-p8-iy9" userLabel="Top View" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <color key="backgroundColor" name="tableViewSeparator"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="jao-Ca-f0I"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZH-Iv-xlQ" userLabel="Bottom View" customClass="BaseUIView" customModule="Chaajao" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="69.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" name="tableViewSeparator"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="2VT-kA-fAr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="XQM-p8-iy9" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="9HC-aH-SAW"/>
+                    <constraint firstItem="VZH-Iv-xlQ" firstAttribute="width" secondItem="XQM-p8-iy9" secondAttribute="width" id="CLL-pK-cIw"/>
+                    <constraint firstAttribute="bottom" secondItem="VZH-Iv-xlQ" secondAttribute="bottom" id="NSJ-zJ-10R"/>
+                    <constraint firstAttribute="trailing" secondItem="anq-hM-4cF" secondAttribute="trailing" constant="15" id="PXB-oN-TLK"/>
+                    <constraint firstItem="anq-hM-4cF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PjG-ra-hwM"/>
+                    <constraint firstItem="XQM-p8-iy9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="X9b-li-wfy"/>
+                    <constraint firstAttribute="bottom" secondItem="anq-hM-4cF" secondAttribute="bottom" id="cHt-8J-l8o"/>
+                    <constraint firstItem="anq-hM-4cF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="cVD-er-hFa"/>
+                    <constraint firstItem="XQM-p8-iy9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qUH-vg-cbp"/>
+                    <constraint firstItem="VZH-Iv-xlQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ris-LM-pAl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="background" destination="anq-hM-4cF" id="MtN-Ja-Hmo"/>
+                <outlet property="bottomBorder" destination="VZH-Iv-xlQ" id="Ujf-cm-GyW"/>
+                <outlet property="descriptionLabel" destination="IYe-Rh-pUt" id="Oa0-fH-Z9A"/>
+                <outlet property="icon" destination="RQl-sR-0Rq" id="KBm-aI-YhC"/>
+                <outlet property="titleLabel" destination="P5i-Iy-67V" id="EuI-Ew-qNd"/>
+                <outlet property="topBorder" destination="XQM-p8-iy9" id="ZXA-A9-Ie2"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="131"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Email" width="500" height="500"/>
+        <namedColor name="darkGray">
+            <color red="0.14499999582767487" green="0.15299999713897705" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="midRed">
+            <color red="0.6589999794960022" green="0.078000001609325409" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tableViewSeparator">
+            <color red="0.88627450980392153" green="0.90196078431372551" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

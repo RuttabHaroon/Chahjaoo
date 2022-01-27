@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="306.963" height="559.572" viewBox="0 0 102.321 186.524">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.219" y1="1.4" x2="2.191" y2="-0.73" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a81417"/>
+      <stop offset="1" stop-color="#f11f24"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_830" data-name="Group 830" transform="translate(-121 -335.642)">
+    <g id="Group_824" data-name="Group 824" transform="translate(0 -3)">
+      <g id="Group_809" data-name="Group 809" transform="translate(148.446 344.443)">
+        <path id="Path_205" data-name="Path 205" d="M446.434-231.656a23.622,23.622,0,0,0-1.031,10.175c1.24,11.024,9.512,19.143,18.474,18.134s15.224-10.763,13.984-21.786a22.4,22.4,0,0,0-6.792-14.008l4.62-4.9-22.913-3.776-16.144,14.321Z" transform="translate(-436.632 247.812)" fill="url(#linear-gradient)"/>
+        <path id="Path_206" data-name="Path 206" d="M439.114-221.984s-1.567,14.978,4.559,16.749S439.114-221.984,439.114-221.984Z" transform="translate(-436.456 249.784)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Path_207" data-name="Path 207" d="M441.527-165.686a16.054,16.054,0,0,1-.687,17.932l-26.915,36.809a2.04,2.04,0,0,0,2.736,2.9c12.761-7.658,36.783-20.567,44.573-14.406,13.45,10.635,7.828,45.9,7.828,45.9H483.04c34.166-63.449,30.281-170.875,30.281-170.875l-3.6-5.768c-4.12,44.5-30.355,59.632-30.355,59.632,6.593,4.945,22.249,4.12,22.249,4.12-48.311,12.706-86.523-26.286-86.523-26.286s-6.682-.755-2.679,8.682S441.527-165.686,441.527-165.686Z" transform="translate(-290.133 591.843)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Path_209" data-name="Path 209" d="M938,338.715h38.748" transform="translate(-773.947 173.57)" fill="none" stroke="#a81417" stroke-linecap="round" stroke-width="3"/>
+    <path id="Path_210" data-name="Path 210" d="M938,338.715h21.527" transform="translate(-750.343 181.952)" fill="none" stroke="#25272b" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
